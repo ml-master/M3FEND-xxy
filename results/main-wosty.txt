@@ -1,0 +1,80 @@
+
+lr: 0.0001; model name: m3fend; batchsize: 64; epoch: 50; gpu: 1; domain_num: 3
+{'lr': [0.0001]}
+semantic_num_expert: 7 emotion_num_expert: 7 style_num_expert: 2 lnn_dim: 50
+Some weights of RobertaModel were not initialized from the model checkpoint at /home/xuexinyi/PYPS/M3FEND-main/roberta_base/ and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+100%|█████████████████████████████████████████| 195/195 [03:24<00:00,  1.05s/it]
+/home/xuexinyi/anacondaL/envs/M3F/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:1416: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/home/xuexinyi/anacondaL/envs/M3F/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:1416: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/home/xuexinyi/anacondaL/envs/M3F/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:1416: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+initialization finished
+100%|█████████████████████████████████████████| 195/195 [08:43<00:00,  2.69s/it]
+Training Epoch 1; Loss 0.3027065533858078; 
+100%|███████████████████████████████████████████| 63/63 [01:18<00:00,  1.24s/it]
+curent {'gossipcop': {'precision': 0.8726, 'recall': 0.9321, 'fscore': 0.895, 'auc': 0.9806, 'acc': 0.9149}, 'politifact': {'precision': 0.8091, 'recall': 0.8084, 'fscore': 0.8087, 'auc': 0.9253, 'acc': 0.8099}, 'COVID': {'precision': 0.9497, 'recall': 0.8535, 'fscore': 0.8907, 'auc': 0.9562, 'acc': 0.9326}, 'auc': 0.9564648474131232, 'metric': 0.8917615758949706, 'recall': 0.9059520938831284, 'precision': 0.880047407630371, 'acc': 0.9166250624063904}
+Max {'gossipcop': {'precision': 0.8726, 'recall': 0.9321, 'fscore': 0.895, 'auc': 0.9806, 'acc': 0.9149}, 'politifact': {'precision': 0.8091, 'recall': 0.8084, 'fscore': 0.8087, 'auc': 0.9253, 'acc': 0.8099}, 'COVID': {'precision': 0.9497, 'recall': 0.8535, 'fscore': 0.8907, 'auc': 0.9562, 'acc': 0.9326}, 'auc': 0.9564648474131232, 'metric': 0.8917615758949706, 'recall': 0.9059520938831284, 'precision': 0.880047407630371, 'acc': 0.9166250624063904}
+100%|█████████████████████████████████████████| 195/195 [08:21<00:00,  2.57s/it]
+Training Epoch 2; Loss 0.1375184513628483; 
+100%|███████████████████████████████████████████| 63/63 [01:18<00:00,  1.24s/it]
+curent {'gossipcop': {'precision': 0.9271, 'recall': 0.9553, 'fscore': 0.9399, 'auc': 0.9883, 'acc': 0.9536}, 'politifact': {'precision': 0.8351, 'recall': 0.8351, 'fscore': 0.831, 'auc': 0.9293, 'acc': 0.831}, 'COVID': {'precision': 0.9433, 'recall': 0.8949, 'fscore': 0.9163, 'auc': 0.9693, 'acc': 0.9456}, 'auc': 0.9780236047477426, 'metric': 0.9294803818918009, 'recall': 0.9351720118961498, 'precision': 0.9241634846750255, 'acc': 0.9468297553669496}
+Max {'gossipcop': {'precision': 0.9271, 'recall': 0.9553, 'fscore': 0.9399, 'auc': 0.9883, 'acc': 0.9536}, 'politifact': {'precision': 0.8351, 'recall': 0.8351, 'fscore': 0.831, 'auc': 0.9293, 'acc': 0.831}, 'COVID': {'precision': 0.9433, 'recall': 0.8949, 'fscore': 0.9163, 'auc': 0.9693, 'acc': 0.9456}, 'auc': 0.9780236047477426, 'metric': 0.9294803818918009, 'recall': 0.9351720118961498, 'precision': 0.9241634846750255, 'acc': 0.9468297553669496}
+100%|█████████████████████████████████████████| 195/195 [08:38<00:00,  2.66s/it]
+Training Epoch 3; Loss 0.08784606644931511; 
+100%|███████████████████████████████████████████| 63/63 [01:19<00:00,  1.26s/it]
+curent {'gossipcop': {'precision': 0.9134, 'recall': 0.9572, 'fscore': 0.932, 'auc': 0.9896, 'acc': 0.9464}, 'politifact': {'precision': 0.8835, 'recall': 0.8842, 'fscore': 0.8803, 'auc': 0.957, 'acc': 0.8803}, 'COVID': {'precision': 0.9365, 'recall': 0.9066, 'fscore': 0.9204, 'auc': 0.9787, 'acc': 0.9472}, 'auc': 0.9820730514696031, 'metric': 0.9275299454571045, 'recall': 0.9416566192428262, 'precision': 0.9156115769757699, 'acc': 0.9443334997503744}
+Max {'gossipcop': {'precision': 0.9271, 'recall': 0.9553, 'fscore': 0.9399, 'auc': 0.9883, 'acc': 0.9536}, 'politifact': {'precision': 0.8351, 'recall': 0.8351, 'fscore': 0.831, 'auc': 0.9293, 'acc': 0.831}, 'COVID': {'precision': 0.9433, 'recall': 0.8949, 'fscore': 0.9163, 'auc': 0.9693, 'acc': 0.9456}, 'auc': 0.9780236047477426, 'metric': 0.9294803818918009, 'recall': 0.9351720118961498, 'precision': 0.9241634846750255, 'acc': 0.9468297553669496}
+100%|█████████████████████████████████████████| 195/195 [08:36<00:00,  2.65s/it]
+Training Epoch 4; Loss 0.05820568929880093; 
+100%|███████████████████████████████████████████| 63/63 [01:19<00:00,  1.26s/it]
+curent {'gossipcop': {'precision': 0.8939, 'recall': 0.9489, 'fscore': 0.9156, 'auc': 0.9886, 'acc': 0.9324}, 'politifact': {'precision': 0.8724, 'recall': 0.8736, 'fscore': 0.8728, 'auc': 0.9512, 'acc': 0.8732}, 'COVID': {'precision': 0.9603, 'recall': 0.8991, 'fscore': 0.9254, 'auc': 0.9809, 'acc': 0.9521}, 'auc': 0.9766519639364467, 'metric': 0.9174397588584375, 'recall': 0.9329588993382096, 'precision': 0.9046415526764958, 'acc': 0.936345481777334}
+Max {'gossipcop': {'precision': 0.9271, 'recall': 0.9553, 'fscore': 0.9399, 'auc': 0.9883, 'acc': 0.9536}, 'politifact': {'precision': 0.8351, 'recall': 0.8351, 'fscore': 0.831, 'auc': 0.9293, 'acc': 0.831}, 'COVID': {'precision': 0.9433, 'recall': 0.8949, 'fscore': 0.9163, 'auc': 0.9693, 'acc': 0.9456}, 'auc': 0.9780236047477426, 'metric': 0.9294803818918009, 'recall': 0.9351720118961498, 'precision': 0.9241634846750255, 'acc': 0.9468297553669496}
+100%|█████████████████████████████████████████| 195/195 [08:20<00:00,  2.57s/it]
+Training Epoch 5; Loss 0.039764713964019094; 
+100%|███████████████████████████████████████████| 63/63 [01:18<00:00,  1.24s/it]
+curent {'gossipcop': {'precision': 0.9414, 'recall': 0.956, 'fscore': 0.9484, 'auc': 0.9873, 'acc': 0.9609}, 'politifact': {'precision': 0.8624, 'recall': 0.8555, 'fscore': 0.8573, 'auc': 0.9541, 'acc': 0.8592}, 'COVID': {'precision': 0.9531, 'recall': 0.9194, 'fscore': 0.9349, 'auc': 0.975, 'acc': 0.957}, 'auc': 0.981419801462905, 'metric': 0.9409666961391099, 'recall': 0.9409666961391099, 'precision': 0.9409666961391099, 'acc': 0.9560659011482776}
+Max {'gossipcop': {'precision': 0.9414, 'recall': 0.956, 'fscore': 0.9484, 'auc': 0.9873, 'acc': 0.9609}, 'politifact': {'precision': 0.8624, 'recall': 0.8555, 'fscore': 0.8573, 'auc': 0.9541, 'acc': 0.8592}, 'COVID': {'precision': 0.9531, 'recall': 0.9194, 'fscore': 0.9349, 'auc': 0.975, 'acc': 0.957}, 'auc': 0.981419801462905, 'metric': 0.9409666961391099, 'recall': 0.9409666961391099, 'precision': 0.9409666961391099, 'acc': 0.9560659011482776}
+100%|█████████████████████████████████████████| 195/195 [08:20<00:00,  2.57s/it]
+Training Epoch 6; Loss 0.029745439019722816; 
+100%|███████████████████████████████████████████| 63/63 [01:19<00:00,  1.26s/it]
+curent {'gossipcop': {'precision': 0.9466, 'recall': 0.9547, 'fscore': 0.9506, 'auc': 0.9876, 'acc': 0.9628}, 'politifact': {'precision': 0.8512, 'recall': 0.8519, 'fscore': 0.8515, 'auc': 0.9461, 'acc': 0.8521}, 'COVID': {'precision': 0.9588, 'recall': 0.9141, 'fscore': 0.9342, 'auc': 0.9754, 'acc': 0.957}, 'auc': 0.9814628379283552, 'metric': 0.9419922359077146, 'recall': 0.9395942180424939, 'precision': 0.9444576129769793, 'acc': 0.9570644033949076}
+Max {'gossipcop': {'precision': 0.9466, 'recall': 0.9547, 'fscore': 0.9506, 'auc': 0.9876, 'acc': 0.9628}, 'politifact': {'precision': 0.8512, 'recall': 0.8519, 'fscore': 0.8515, 'auc': 0.9461, 'acc': 0.8521}, 'COVID': {'precision': 0.9588, 'recall': 0.9141, 'fscore': 0.9342, 'auc': 0.9754, 'acc': 0.957}, 'auc': 0.9814628379283552, 'metric': 0.9419922359077146, 'recall': 0.9395942180424939, 'precision': 0.9444576129769793, 'acc': 0.9570644033949076}
+100%|█████████████████████████████████████████| 195/195 [08:19<00:00,  2.56s/it]
+Training Epoch 7; Loss 0.024284381033757175; 
+100%|███████████████████████████████████████████| 63/63 [01:19<00:00,  1.26s/it]
+curent {'gossipcop': {'precision': 0.934, 'recall': 0.9619, 'fscore': 0.9468, 'auc': 0.9862, 'acc': 0.959}, 'politifact': {'precision': 0.8685, 'recall': 0.863, 'fscore': 0.8647, 'auc': 0.958, 'acc': 0.8662}, 'COVID': {'precision': 0.9462, 'recall': 0.9092, 'fscore': 0.926, 'auc': 0.9785, 'acc': 0.9513}, 'auc': 0.9808221472014576, 'metric': 0.9379249820040767, 'recall': 0.9425357688288722, 'precision': 0.933555633210125, 'acc': 0.9533200199700449}
+Max {'gossipcop': {'precision': 0.9466, 'recall': 0.9547, 'fscore': 0.9506, 'auc': 0.9876, 'acc': 0.9628}, 'politifact': {'precision': 0.8512, 'recall': 0.8519, 'fscore': 0.8515, 'auc': 0.9461, 'acc': 0.8521}, 'COVID': {'precision': 0.9588, 'recall': 0.9141, 'fscore': 0.9342, 'auc': 0.9754, 'acc': 0.957}, 'auc': 0.9814628379283552, 'metric': 0.9419922359077146, 'recall': 0.9395942180424939, 'precision': 0.9444576129769793, 'acc': 0.9570644033949076}
+100%|█████████████████████████████████████████| 195/195 [08:38<00:00,  2.66s/it]
+Training Epoch 8; Loss 0.020490305348991964; 
+100%|███████████████████████████████████████████| 63/63 [01:30<00:00,  1.44s/it]
+curent {'gossipcop': {'precision': 0.9459, 'recall': 0.9473, 'fscore': 0.9466, 'auc': 0.9872, 'acc': 0.9601}, 'politifact': {'precision': 0.8853, 'recall': 0.8762, 'fscore': 0.8785, 'auc': 0.9554, 'acc': 0.8803}, 'COVID': {'precision': 0.9531, 'recall': 0.9194, 'fscore': 0.9349, 'auc': 0.9792, 'acc': 0.957}, 'auc': 0.9836890121372879, 'metric': 0.9406733827054681, 'recall': 0.9360434584572516, 'precision': 0.9455590260749818, 'acc': 0.9563155267099351}
+Max {'gossipcop': {'precision': 0.9466, 'recall': 0.9547, 'fscore': 0.9506, 'auc': 0.9876, 'acc': 0.9628}, 'politifact': {'precision': 0.8512, 'recall': 0.8519, 'fscore': 0.8515, 'auc': 0.9461, 'acc': 0.8521}, 'COVID': {'precision': 0.9588, 'recall': 0.9141, 'fscore': 0.9342, 'auc': 0.9754, 'acc': 0.957}, 'auc': 0.9814628379283552, 'metric': 0.9419922359077146, 'recall': 0.9395942180424939, 'precision': 0.9444576129769793, 'acc': 0.9570644033949076}
+100%|█████████████████████████████████████████| 195/195 [08:25<00:00,  2.59s/it]
+Training Epoch 9; Loss 0.016959856130564832; 
+100%|███████████████████████████████████████████| 63/63 [01:18<00:00,  1.25s/it]
+curent {'gossipcop': {'precision': 0.9493, 'recall': 0.9557, 'fscore': 0.9525, 'auc': 0.987, 'acc': 0.9643}, 'politifact': {'precision': 0.8884, 'recall': 0.8752, 'fscore': 0.8781, 'auc': 0.9586, 'acc': 0.8803}, 'COVID': {'precision': 0.948, 'recall': 0.9147, 'fscore': 0.93, 'auc': 0.9761, 'acc': 0.9537}, 'auc': 0.9828199099750823, 'metric': 0.9432239568095516, 'recall': 0.939918080004287, 'precision': 0.9466581020571385, 'acc': 0.9580629056415377}
+Max {'gossipcop': {'precision': 0.9493, 'recall': 0.9557, 'fscore': 0.9525, 'auc': 0.987, 'acc': 0.9643}, 'politifact': {'precision': 0.8884, 'recall': 0.8752, 'fscore': 0.8781, 'auc': 0.9586, 'acc': 0.8803}, 'COVID': {'precision': 0.948, 'recall': 0.9147, 'fscore': 0.93, 'auc': 0.9761, 'acc': 0.9537}, 'auc': 0.9828199099750823, 'metric': 0.9432239568095516, 'recall': 0.939918080004287, 'precision': 0.9466581020571385, 'acc': 0.9580629056415377}
+100%|█████████████████████████████████████████| 195/195 [07:09<00:00,  2.20s/it]
+Training Epoch 10; Loss 0.014271830625306726; 
+100%|███████████████████████████████████████████| 63/63 [01:07<00:00,  1.07s/it]
+curent {'gossipcop': {'precision': 0.9455, 'recall': 0.9563, 'fscore': 0.9507, 'auc': 0.9873, 'acc': 0.9628}, 'politifact': {'precision': 0.8564, 'recall': 0.8297, 'fscore': 0.8328, 'auc': 0.9528, 'acc': 0.838}, 'COVID': {'precision': 0.9521, 'recall': 0.892, 'fscore': 0.9178, 'auc': 0.9771, 'acc': 0.9472}, 'auc': 0.9805443359322669, 'metric': 0.9367899734813716, 'recall': 0.9311664389250596, 'precision': 0.9427978460539422, 'acc': 0.9535696455317024}
+Max {'gossipcop': {'precision': 0.9493, 'recall': 0.9557, 'fscore': 0.9525, 'auc': 0.987, 'acc': 0.9643}, 'politifact': {'precision': 0.8884, 'recall': 0.8752, 'fscore': 0.8781, 'auc': 0.9586, 'acc': 0.8803}, 'COVID': {'precision': 0.948, 'recall': 0.9147, 'fscore': 0.93, 'auc': 0.9761, 'acc': 0.9537}, 'auc': 0.9828199099750823, 'metric': 0.9432239568095516, 'recall': 0.939918080004287, 'precision': 0.9466581020571385, 'acc': 0.9580629056415377}
+100%|█████████████████████████████████████████| 195/195 [06:00<00:00,  1.85s/it]
+Training Epoch 11; Loss 0.014603802992198133; 
+100%|███████████████████████████████████████████| 63/63 [00:56<00:00,  1.12it/s]
+curent {'gossipcop': {'precision': 0.9457, 'recall': 0.9647, 'fscore': 0.9546, 'auc': 0.9863, 'acc': 0.9654}, 'politifact': {'precision': 0.8534, 'recall': 0.8393, 'fscore': 0.8419, 'auc': 0.9497, 'acc': 0.8451}, 'COVID': {'precision': 0.9522, 'recall': 0.9107, 'fscore': 0.9294, 'auc': 0.9785, 'acc': 0.9537}, 'auc': 0.9800158414382552, 'metric': 0.9429791951343676, 'recall': 0.9429791951343676, 'precision': 0.9429791951343676, 'acc': 0.9575636545182227}
+Max {'gossipcop': {'precision': 0.9493, 'recall': 0.9557, 'fscore': 0.9525, 'auc': 0.987, 'acc': 0.9643}, 'politifact': {'precision': 0.8884, 'recall': 0.8752, 'fscore': 0.8781, 'auc': 0.9586, 'acc': 0.8803}, 'COVID': {'precision': 0.948, 'recall': 0.9147, 'fscore': 0.93, 'auc': 0.9761, 'acc': 0.9537}, 'auc': 0.9828199099750823, 'metric': 0.9432239568095516, 'recall': 0.939918080004287, 'precision': 0.9466581020571385, 'acc': 0.9580629056415377}
+100%|█████████████████████████████████████████| 195/195 [04:50<00:00,  1.49s/it]
+Training Epoch 12; Loss 0.011388302652332457; 
+100%|███████████████████████████████████████████| 63/63 [00:45<00:00,  1.40it/s]
+curent {'gossipcop': {'precision': 0.9492, 'recall': 0.9033, 'fscore': 0.9234, 'auc': 0.9848, 'acc': 0.9457}, 'politifact': {'precision': 0.8463, 'recall': 0.8146, 'fscore': 0.8173, 'auc': 0.9435, 'acc': 0.8239}, 'COVID': {'precision': 0.9587, 'recall': 0.878, 'fscore': 0.9109, 'auc': 0.9709, 'acc': 0.944}, 'auc': 0.9789754306995685, 'metric': 0.9153905361686382, 'recall': 0.8914988746885298, 'precision': 0.9478484594581238, 'acc': 0.9408387418871692}
+Max {'gossipcop': {'precision': 0.9493, 'recall': 0.9557, 'fscore': 0.9525, 'auc': 0.987, 'acc': 0.9643}, 'politifact': {'precision': 0.8884, 'recall': 0.8752, 'fscore': 0.8781, 'auc': 0.9586, 'acc': 0.8803}, 'COVID': {'precision': 0.948, 'recall': 0.9147, 'fscore': 0.93, 'auc': 0.9761, 'acc': 0.9537}, 'auc': 0.9828199099750823, 'metric': 0.9432239568095516, 'recall': 0.939918080004287, 'precision': 0.9466581020571385, 'acc': 0.9580629056415377}
+100%|███████████████████████████████████████████| 64/64 [00:46<00:00,  1.37it/s]
+{'gossipcop': {'precision': 0.9482, 'recall': 0.9531, 'fscore': 0.9506, 'auc': 0.9818, 'acc': 0.9641}, 'politifact': {'precision': 0.8762, 'recall': 0.8726, 'fscore': 0.8725, 'auc': 0.955, 'acc': 0.8728}, 'COVID': {'precision': 0.9709, 'recall': 0.9289, 'fscore': 0.9479, 'auc': 0.9826, 'acc': 0.9659}, 'auc': 0.9809923724071584, 'metric': 0.9460497905279621, 'recall': 0.9414538892215667, 'precision': 0.9508861728296034, 'acc': 0.9607746996812945}
+best model path: ./param_model_wosty/m3fend/parameter_m3fend.pkl
+best metric: {'gossipcop': {'precision': 0.9482, 'recall': 0.9531, 'fscore': 0.9506, 'auc': 0.9818, 'acc': 0.9641}, 'politifact': {'precision': 0.8762, 'recall': 0.8726, 'fscore': 0.8725, 'auc': 0.955, 'acc': 0.8728}, 'COVID': {'precision': 0.9709, 'recall': 0.9289, 'fscore': 0.9479, 'auc': 0.9826, 'acc': 0.9659}, 'auc': 0.9809923724071584, 'metric': 0.9460497905279621, 'recall': 0.9414538892215667, 'precision': 0.9508861728296034, 'acc': 0.9607746996812945}
+
+Process finished with exit code 0
